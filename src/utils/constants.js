@@ -6,10 +6,30 @@ export const COMPANY_INFO = {
   address: '123 Digital Ave, Suite 400, San Francisco, CA 94103',
 };
 
+export const CONTACT_INFO = [
+  {
+    label: 'Email',
+    value: COMPANY_INFO.email,
+    href: `mailto:${COMPANY_INFO.email}`,
+    icon: 'bx bx-envelope',
+  },
+  {
+    label: 'Phone',
+    value: COMPANY_INFO.phone,
+    href: `tel:${COMPANY_INFO.phone.replace(/\s+/g, '')}`,
+    icon: 'bx bx-phone-call',
+  },
+  {
+    label: 'Address',
+    value: COMPANY_INFO.address,
+    icon: 'bx bx-map',
+  },
+];
+
 export const SOCIAL_LINKS = [
-  { label: 'Twitter', icon: 'T', path: '#' },
-  { label: 'LinkedIn', icon: 'L', path: '#' },
-  { label: 'Instagram', icon: 'I', path: '#' },
+  { label: 'Twitter', icon: 'bx bxl-twitter', path: '#' },
+  { label: 'LinkedIn', icon: 'bx bxl-linkedin', path: '#' },
+  { label: 'Instagram', icon: 'bx bxl-instagram', path: '#' },
 ];
 
 export const NAV_LINKS = [
