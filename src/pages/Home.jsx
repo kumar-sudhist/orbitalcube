@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className='bg-gradient-to-b from-[#0B0F19] via-[#0F1419] to-[#0B0F19] text-white min-h-screen'>
+    <div className='bg-linear-to-b from-[#0B0F19] via-[#0F1419] to-[#0B0F19] text-white min-h-screen'>
       {/* HERO SECTION */}
       <section className='relative pt-32 pb-24 overflow-hidden'>
         {/* Background Effects */}
@@ -26,7 +26,7 @@ const Home = () => {
 
                 <h1 className='text-5xl md:text-7xl font-black leading-tight tracking-tight'>
                   Build Stunning <br />
-                  <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500'>
+                  <span className='text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-blue-500 to-purple-500'>
                     Real Estate Websites
                   </span>
                 </h1>
@@ -41,7 +41,7 @@ const Home = () => {
               <div className='flex flex-col sm:flex-row gap-4 pt-4'>
                 <Link
                   to='/contact-us'
-                  className='group px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 rounded-xl font-bold transition-all duration-300 shadow-lg shadow-blue-600/50 hover:shadow-xl hover:shadow-blue-600/70 hover:scale-105 transform active:scale-95 flex items-center justify-center gap-2'
+                  className='group px-8 py-4 bg-linear-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 rounded-xl font-bold transition-all duration-300 shadow-lg shadow-blue-600/50 hover:shadow-xl hover:shadow-blue-600/70 hover:scale-105 transform active:scale-95 flex items-center justify-center gap-2'
                 >
                   Get Started
                   <svg
@@ -81,14 +81,14 @@ const Home = () => {
 
             {/* RIGHT - IMAGE */}
             <div className='relative h-96 md:h-full hidden md:block'>
-              <div className='absolute inset-0 bg-gradient-to-br from-blue-600/20 via-blue-500/10 to-purple-600/20 rounded-2xl blur-2xl'></div>
+              <div className='absolute inset-0 bg-linear-to-br from-blue-600/20 via-blue-500/10 to-purple-600/20 rounded-2xl blur-2xl'></div>
               <div className='absolute inset-0 bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden'>
                 <img
                   src='https://images.unsplash.com/photo-1568605114967-8130f3a36994'
                   alt='real estate'
                   className='w-full h-full object-cover'
                 />
-                <div className='absolute inset-0 bg-gradient-to-t from-[#0B0F19] via-transparent to-transparent'></div>
+                <div className='absolute inset-0 bg-linear-to-t from-[#0B0F19] via-transparent to-transparent'></div>
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@ const Home = () => {
           <div className='text-center space-y-6 mb-20'>
             <h2 className='text-5xl md:text-6xl font-black tracking-tight'>
               Our{' '}
-              <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500'>
+              <span className='text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-purple-500'>
                 Services
               </span>
             </h2>
@@ -115,7 +115,7 @@ const Home = () => {
             {SERVICES.slice(0, 6).map((service, index) => (
               <div key={index} className='group relative h-full'>
                 {/* Glow Effect */}
-                <div className='absolute -inset-0.5 bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
+                <div className='absolute -inset-0.5 bg-linear-to-br from-blue-600/20 to-purple-600/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
 
                 {/* Card */}
                 <div className='relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 h-full shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2 group-hover:border-blue-500/30'>
@@ -125,10 +125,10 @@ const Home = () => {
                   </div>
 
                   {/* Content */}
-                  <h3 className='text-2xl font-bold mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-500 transition-all duration-300'>
+                  <h3 className='text-2xl font-bold mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-linear-to-r group-hover:from-blue-400 group-hover:to-purple-500 transition-all duration-300'>
                     {service.title}
                   </h3>
-                  <p className='text-gray-400 group-hover:text-gray-300 transition-colors mb-8 flex-grow'>
+                  <p className='text-gray-400 group-hover:text-gray-300 transition-colors mb-8 grow'>
                     {service.description}
                   </p>
 
@@ -160,12 +160,12 @@ const Home = () => {
       </section>
 
       {/* WHY CHOOSE US */}
-      <section className='py-32 bg-gradient-to-b from-white/5 to-transparent'>
+      <section className='py-32 bg-linear-to-b from-white/5 to-transparent'>
         <div className='max-w-7xl mx-auto px-6 md:px-12 lg:px-20'>
           <div className='text-center space-y-6 mb-20'>
             <h2 className='text-5xl md:text-6xl font-black tracking-tight'>
               Why Choose{' '}
-              <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500'>
+              <span className='text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-purple-500'>
                 OrbitalCube
               </span>
             </h2>
@@ -193,7 +193,7 @@ const Home = () => {
               },
             ].map((item, idx) => (
               <div key={idx} className='group relative'>
-                <div className='absolute -inset-0.5 bg-gradient-to-br from-blue-600/10 to-purple-600/10 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
+                <div className='absolute -inset-0.5 bg-linear-to-br from-blue-600/10 to-purple-600/10 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
                 <div className='relative bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:border-blue-500/30 transition-all duration-300 group-hover:bg-white/10'>
                   <div className='text-5xl mb-4'>{item.icon}</div>
                   <h3 className='text-2xl font-bold mb-2'>{item.title}</h3>
@@ -215,10 +215,10 @@ const Home = () => {
         </div>
 
         <div className='max-w-4xl mx-auto px-6 text-center'>
-          <div className='bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-3xl p-12 md:p-16 shadow-2xl hover:shadow-3xl transition-shadow duration-300'>
+          <div className='bg-linear-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-3xl p-12 md:p-16 shadow-2xl hover:shadow-3xl transition-shadow duration-300'>
             <h2 className='text-5xl md:text-6xl font-black mb-6 leading-tight'>
               Ready to{' '}
-              <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500'>
+              <span className='text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-purple-500'>
                 Elevate
               </span>{' '}
               Your Online Presence?
